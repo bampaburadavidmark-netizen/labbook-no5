@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Serena Kampala room showcase, prices and a comparison of room features — a front-end design demonstration.">
+  <title>Kampala Serena Hotel | Rooms &amp; Stays</title>
+  <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <img src="serena-logo.png" alt="Serena Kampala concept logo" class="brand-logo">
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#rooms">Rooms</a>
+        <a href="#compare">Compare</a>
+        <a class="nav-book" href="#booking">Book a Stay <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-content container">
+        <p class="eyebrow hero-eyebrow"><span class="dash" aria-hidden="true"></span> A Kampala escape</p>
+        <h1 id="hero-heading">Experience Luxury<br>at the <em>Heart of Kampala</em></h1>
+        <p class="hero-intro">Discover thoughtful comfort, timeless elegance and an unforgettable city retreat.</p>
+        <a class="button button-gold" href="#booking">Book Now <span aria-hidden="true">↗</span></a>
+        <div class="hero-caption">KAMPALA, UGANDA <span aria-hidden="true">·</span> SERENA STAYS</div>
+      </div>
+    </section>
+
+    <!-- ROOM SHOWCASE -->
+    <section id="rooms" class="rooms-section section-pad" aria-labelledby="rooms-heading">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">A stay for every occasion</p>
+            <h2 id="rooms-heading">Explore Our <em>Rooms</em></h2>
+          </div>
+          <p class="section-intro">Four thoughtfully presented room options, from a restful city hideaway to an exceptional private retreat.</p>
+        </div>
+        <div class="room-grid">
+          <article class="room-card">
+            <div class="room-card-top"><span class="room-number">01 / STANDARD</span><span class="room-ornament" aria-hidden="true">✦</span></div>
+            <div class="room-card-body">
+              <p class="room-tag">Classic Comfort</p>
+              <h3>Standard Room</h3>
+              <p class="room-description">A peaceful, welcoming space with all the essentials for a comfortable stay in the city.</p>
+              <div class="card-bottom"><div class="price"><span>From</span><strong>UGX 350,000</strong><span>per night</span></div><a class="card-link" href="#compare" aria-label="Compare Standard room">Explore details <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+          <article class="room-card">
+            <div class="room-card-top"><span class="room-number">02 / DELUXE</span><span class="room-ornament" aria-hidden="true">✦</span></div>
+            <div class="room-card-body">
+              <p class="room-tag">Elevated Living</p>
+              <h3>Deluxe Room</h3>
+              <p class="room-description">A generous retreat designed for easy relaxation after a day of discovering Kampala.</p>
+              <div class="card-bottom"><div class="price"><span>From</span><strong>UGX 550,000</strong><span>per night</span></div><a class="card-link" href="#compare" aria-label="Compare Deluxe room">Explore details <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+          <article class="room-card">
+            <div class="room-card-top"><span class="room-number">03 / SUITE</span><span class="room-ornament" aria-hidden="true">✦</span></div>
+            <div class="room-card-body">
+              <p class="room-tag">Room to Unwind</p>
+              <h3>Suite</h3>
+              <p class="room-description">A refined setting with extra space for guests who appreciate privacy and understated luxury.</p>
+              <div class="card-bottom"><div class="price"><span>From</span><strong>UGX 900,000</strong><span>per night</span></div><a class="card-link" href="#compare" aria-label="Compare Suite">Explore details <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+          <article class="room-card presidential-card">
+            <div class="room-card-top"><span class="room-number">04 / PRESIDENTIAL</span><span class="room-ornament" aria-hidden="true">✦</span></div>
+            <div class="room-card-body">
+              <p class="room-tag">Signature Collection</p>
+              <h3>Presidential</h3>
+              <p class="room-description">An impressive and spacious private haven created for an exceptionally memorable stay.</p>
+              <div class="card-bottom"><div class="price"><span>From</span><strong>UGX 2,500,000</strong><span>per night</span></div><a class="card-link" href="#compare" aria-label="Compare Presidential room">Explore details <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+        </div>
+        <p class="data-note">* Prices and room categories shown are supplied for this coursework brief. Descriptions and comparison details are illustrative, not live hotel offers.</p>
+      </div>
+    </section>
+
+    <!-- COMPARISON TABLE -->
+    <section id="compare" class="compare-section section-pad" aria-labelledby="compare-heading">
+      <div class="container">
+        <div class="section-heading compare-heading">
+          <div><p class="eyebrow">Find your perfect fit</p><h2 id="compare-heading">Compare the <em>Details</em></h2></div>
+          <p class="section-intro">A clear, at-a-glance comparison to help you explore the different room options.</p>
+        </div>
+        <div class="table-scroll" role="region" aria-label="Room comparison table, scroll horizontally on small screens" tabindex="0">
+          <table class="comparison-table">
+            <thead>
+              <tr><th scope="col">Feature</th><th scope="col">Standard</th><th scope="col">Deluxe</th><th scope="col">Suite</th><th scope="col">Presidential</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Bed Type</th><td>Queen</td><td>King</td><td>King + Lounge</td><td>King + Twin</td></tr>
+              <tr><th scope="row">Room Size (m²)</th><td>35 m²</td><td>47 m²</td><td>75 m²</td><td>170 m²</td></tr>
+              <tr><th scope="row">Wi-Fi</th><td><span class="yes" aria-label="Included">✓</span></td><td><span class="yes" aria-label="Included">✓</span></td><td><span class="yes" aria-label="Included">✓</span></td><td><span class="yes" aria-label="Included">✓</span></td></tr>
+              <tr><th scope="row">Breakfast</th><td><span class="no" aria-label="Not included">✗</span></td><td><span class="yes" aria-label="Included">✓</span></td><td><span class="yes" aria-label="Included">✓</span></td><td><span class="yes" aria-label="Included">✓</span></td></tr>
+              <tr><th scope="row">Pool Access</th><td><span class="yes" aria-label="Included">✓</span></td><td><span class="yes" aria-label="Included">✓</span></td><td><span class="yes" aria-label="Included">✓</span></td><td><span class="yes" aria-label="Included">✓</span></td></tr>
+              <tr class="price-row"><th scope="row">Price/Night (UGX)</th><td>350,000</td><td>550,000</td><td>900,000</td><td>2,500,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-legend"><span><span class="yes" aria-hidden="true">✓</span> Included</span><span><span class="no" aria-hidden="true">✗</span> Not included</span><span>All values shown are for demonstration.</span></div>
+      </div>
+    </section>
+
+    <!-- BOOKING ANCHOR: no booking form requested -->
+    <section id="booking" class="booking-section" aria-labelledby="booking-heading">
+      <div class="container booking-inner">
+        <div>
+          <p class="eyebrow booking-eyebrow">Your stay begins here</p>
+          <h2 id="booking-heading">Make Your Next Stay <em>Memorable.</em></h2>
+          <p>This is a front-end demonstration without an online reservation form. For actual availability and reservations, please visit the hotel’s official website.</p>
+        </div>
+        <a class="button button-gold booking-cta" href="https://www.serenahotels.com/kampala" target="_blank" rel="noopener noreferrer">Official Hotel Website <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><p>Serena Kampala — Room Showcase <span class="footer-dot">✦</span> Coursework Design Concept</p><a href="#top">Back to top ↑</a></div></footer>
+</body>
+</html>

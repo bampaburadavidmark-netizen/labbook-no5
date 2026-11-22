@@ -1,0 +1,131 @@
+/* SERENA KAMPALA — SINGLE PAGE BOOKING SHOWCASE */
+/* All visual styling stays in this external file. */
+:root {
+  --burgundy: #800020;
+  --burgundy-deep: #520017;
+  --gold: #C9A84C;
+  --ivory: #FFFFF0;
+  --ink: #302329;
+  --muted: #786a6d;
+  --line: #e9dfd5;
+  --green: #20834f;
+  --red: #c33843;
+  --surface: #ffffff;
+  --max-width: 1160px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body { font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--ivory); line-height: 1.65; }
+a { text-decoration: none; color: inherit; }
+a:focus-visible, button:focus-visible, .table-scroll:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+.container { width: min(100% - 48px, var(--max-width)); margin: 0 auto; }
+.site-header { position: sticky; top: 0; z-index: 100; background: var(--burgundy-deep); border-bottom: 1px solid rgba(201,168,76,.55); box-shadow: 0 8px 30px rgba(22,7,13,.15); }
+.nav-container { width: min(100% - 48px, var(--max-width)); margin: auto; min-height: 84px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+.brand { display: inline-flex; align-items: center; flex-shrink: 0; }
+.brand-logo { display: block; height: 50px; width: auto; max-width: 255px; object-fit: contain; }
+nav { display: flex; align-items: center; gap: 34px; }
+nav a { color: #fff8e5; font-size: .88rem; letter-spacing: .05em; font-weight: 700; transition: color .2s, background .2s, transform .2s; white-space: nowrap; }
+nav a:hover { color: var(--gold); }
+nav .nav-book { color: var(--gold); border: 1px solid var(--gold); padding: 11px 19px; border-radius: 3px; }
+nav .nav-book:hover { background: var(--gold); color: var(--burgundy-deep); }
+.hero { position: relative; min-height: 575px; width: 100%; display: flex; align-items: center; background-image: linear-gradient(90deg, rgba(32,11,18,.87) 0%, rgba(45,14,21,.67) 37%, rgba(29,14,19,.17) 100%), url('hero-serena.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; color: var(--ivory); }
+.hero-content { position: relative; padding-top: 82px; padding-bottom: 92px; }
+.eyebrow { text-transform: uppercase; letter-spacing: .20em; font-size: .72rem; font-weight: 800; color: var(--burgundy); margin-bottom: 14px; }
+.hero-eyebrow { color: #f6da90; display: flex; align-items: center; gap: 13px; }
+.dash { display: inline-block; width: 30px; height: 2px; background: var(--gold); }
+h1, h2, h3 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; line-height: 1.13; }
+h1 { font-size: clamp(2.9rem, 5vw, 4.85rem); letter-spacing: -.045em; max-width: 800px; text-wrap: balance; }
+h1 em, h2 em { color: var(--gold); font-weight: 400; }
+.hero-intro { font-size: 1.05rem; max-width: 500px; margin: 25px 0 34px; color: #f6eae3; }
+.button { display: inline-flex; gap: 28px; justify-content: center; align-items: center; font-size: .88rem; letter-spacing: .06em; font-weight: 800; padding: 15px 26px; border-radius: 3px; transition: transform .2s, background .2s, color .2s; }
+.button:hover { transform: translateY(-2px); }
+.button-gold { background: var(--gold); color: #2a1820; }
+.button-gold:hover { background: #f1d788; }
+.hero-caption { position: absolute; bottom: 24px; left: 0; color: rgba(255,250,237,.80); font-size: .66rem; font-weight: 700; letter-spacing: .18em; }
+.hero-caption span { color: var(--gold); margin: 0 12px; }
+.section-pad { padding: 100px 0; }
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 36px; margin-bottom: 40px; }
+.section-heading h2 { font-size: clamp(2.25rem, 3.6vw, 3.6rem); color: var(--burgundy-deep); letter-spacing: -.035em; }
+.section-intro { max-width: 365px; font-size: .97rem; color: var(--muted); }
+.room-grid { display: flex; flex-wrap: wrap; gap: 24px; }
+.room-card { flex: 0 0 calc(50% - 12px); display: flex; flex-direction: column; background: #fffdfa; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; box-shadow: 0 8px 24px rgba(67,34,40,.055); transition: transform .25s, box-shadow .25s; }
+.room-card:hover { transform: translateY(-4px); box-shadow: 0 20px 36px rgba(67,34,40,.12); }
+.room-card-top { min-height: 113px; padding: 23px 30px; display: flex; align-items: start; justify-content: space-between; background: linear-gradient(112deg, #74001d 0%, #941d3c 58%, #4d071d 100%); border-bottom: 4px solid var(--gold); color: #fff8ed; }
+.room-number { font-size: .75rem; letter-spacing: .20em; font-weight: 800; }
+.room-ornament { font-size: 2.5rem; line-height: 1; color: var(--gold); opacity: .95; }
+.presidential-card .room-card-top { background: linear-gradient(115deg,#490b20,#7d2442 58%,#3e0618); }
+.room-card-body { flex: 1; padding: 27px 30px 28px; display: flex; flex-direction: column; }
+.room-tag { font-weight: 800; letter-spacing: .17em; text-transform: uppercase; color: #a68236; font-size: .67rem; margin-bottom: 8px; }
+.room-card h3 { font-size: 2.05rem; color: var(--burgundy-deep); margin-bottom: 12px; }
+.room-description { color: var(--muted); max-width: 460px; font-size: .95rem; margin-bottom: 28px; }
+.card-bottom { margin-top: auto; padding-top: 21px; border-top: 1px solid var(--line); display: flex; align-items: end; justify-content: space-between; gap: 16px; }
+.price { display: flex; flex-direction: column; gap: 0; }
+.price span { font-size: .68rem; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; }
+.price strong { color: var(--burgundy); font-size: 1.35rem; line-height: 1.32; letter-spacing: -.01em; }
+.card-link { font-size: .79rem; font-weight: 800; color: var(--burgundy); white-space: nowrap; border-bottom: 1px solid var(--gold); padding-bottom: 4px; }
+.card-link:hover { color: #b28225; }
+.data-note { font-size: .78rem; color: var(--muted); margin-top: 20px; }
+.compare-section { background: #f5f0e8; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.compare-heading { margin-bottom: 33px; }
+.table-scroll { width: 100%; overflow-x: auto; border-radius: 8px; border: 1px solid #e5d5ce; background: white; box-shadow: 0 15px 35px rgba(60,24,34,.06); }
+.comparison-table { width: 100%; min-width: 720px; border-collapse: collapse; table-layout: fixed; font-size: .95rem; text-align: center; }
+.comparison-table th, .comparison-table td { border-bottom: 1px solid #efe5e2; padding: 19px 17px; }
+.comparison-table thead th { background: #800020; color: #fff; font-weight: 800; font-size: .9rem; letter-spacing: .025em; border-right: 1px solid rgba(255,255,255,.15); }
+.comparison-table thead th:first-child { width: 23%; text-align: left; padding-left: 27px; }
+.comparison-table tbody tr:nth-child(even) { background: #fff9f3; }
+.comparison-table tbody th { font-weight: 800; text-align: left; padding-left: 27px; color: var(--burgundy-deep); }
+.comparison-table tbody tr:last-child th, .comparison-table tbody tr:last-child td { border-bottom: none; }
+.comparison-table .price-row { background: #f7e7d7 !important; }
+.comparison-table .price-row td { color: var(--burgundy); font-weight: 800; white-space: nowrap; }
+.yes, .no { display: inline-block; font-size: 1.48rem; line-height: 1; font-weight: 900; }
+.yes { color: var(--green); }
+.no { color: var(--red); }
+.table-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; font-size: .77rem; margin-top: 18px; color: var(--muted); }
+.table-legend > span { display: inline-flex; gap: 8px; align-items: center; }
+.table-legend .yes, .table-legend .no { font-size: 1.05rem; }
+.booking-section { padding: 79px 0; background: linear-gradient(115deg,#510018,#800020 65%,#661027); color: var(--ivory); }
+.booking-inner { display: flex; align-items: center; justify-content: space-between; gap: 42px; }
+.booking-inner h2 { font-size: clamp(2.3rem, 3.6vw, 3.8rem); letter-spacing: -.035em; max-width: 670px; }
+.booking-inner p:not(.eyebrow) { max-width: 650px; margin-top: 16px; font-size: .95rem; color: #f0dce1; }
+.booking-eyebrow { color: var(--gold); }
+.booking-cta { flex-shrink: 0; }
+.site-footer { background: #310711; color: #f1dce0; padding: 27px 0; font-size: .78rem; }
+.footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.footer-dot { color: var(--gold); padding: 0 10px; }
+.site-footer a:hover { color: var(--gold); }
+@media (max-width: 880px) {
+  .room-card { flex-basis: calc(50% - 12px); }
+  .card-bottom { align-items: start; flex-direction: column; }
+  .section-heading { align-items: start; flex-direction: column; gap: 15px; }
+  .booking-inner { flex-direction: column; align-items: start; }
+}
+@media (max-width: 620px) {
+  .container, .nav-container { width: min(100% - 32px, var(--max-width)); }
+  .nav-container { flex-wrap: wrap; gap: 5px; padding: 12px 0 15px; justify-content: center; }
+  .brand-logo { height: 43px; }
+  nav { width: 100%; justify-content: center; gap: 18px; }
+  nav a { font-size: .8rem; }
+  nav .nav-book { padding: 7px 11px; }
+  html { scroll-padding-top: 125px; }
+  .hero { min-height: 540px; background-position: 59% center; }
+  .hero-content { padding: 77px 0 80px; }
+  .hero-caption { bottom: 25px; }
+  h1 { font-size: clamp(2.6rem, 11vw, 3.9rem); }
+  .hero-intro { font-size: .97rem; }
+  .section-pad { padding: 69px 0; }
+  .room-card { flex-basis: 100%; }
+  .card-bottom { align-items: end; flex-direction: row; }
+  .room-card-body { padding: 26px 24px; }
+  .room-card-top { padding: 22px 24px; }
+  .table-legend { gap: 14px; }
+  .booking-section { padding: 66px 0; }
+  .footer-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
+}
+@media (max-width: 405px) {
+  .card-bottom { align-items: start; flex-direction: column; }
+  .price strong { font-size: 1.22rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0s !important; }
+}
